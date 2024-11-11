@@ -443,9 +443,9 @@ The data file `daily_temp_2022.json.txt` contains the daily average, highest and
 <div style="page-break-after: always;"></div>
 
 #### How to upload the dataset
-1. Under "Data Services", click the "Database" on the left panel, and then click the "Browse Collections" at Cluster0.
+1. Click the "Clusters" on the left panel, and then click the "Browse Collections" at Cluster0.
 
-   ![Alt text](images/discus-1.png)
+   ![Alt text](images/discus-1b.png)
    
 2. Click on the (+) button on the right side of the database to create a new collection.
 
