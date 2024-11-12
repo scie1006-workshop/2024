@@ -319,21 +319,21 @@ The LED is connected to the GPIO pin `146` for the Red channel and `150` for the
 
 In this part, we will use the `pygame` library to create the GUI.
 
-1. Let's import the library and initialize it at the top of the program, *after* the `import datetime` statement.
+1. Let's import the library and initialize it at the top of the program. Put the following code **after** the `import datetime` statement.
    ```python
    import pygame 
 
    # initialize the pygame library and prepare it for use
    pygame.init() 
    ```
-2. For a GUI application, we have to set the window size and name.
+2. For a GUI application, we have to set the window size and name. Put the following code **after** `pygame.init()`.
    ```python
    # set window size to 400x300 pixels
    window = pygame.display.set_mode((400, 300))   
    # set the window name
    pygame.display.set_caption('My Alert')   
    ```
-3. Then, We create a font for text display and a clock to control the frame rate of the application.
+3. Then, We create a font for text display and a clock to control the frame rate of the application. Put the following code **after** `pygame.display.set_caption('My Alert')`.
    ```python   
    # create a font Arial with size 30 for text display
    font = pygame.font.SysFont("Arial", 30)
@@ -353,7 +353,7 @@ In this part, we will use the `pygame` library to create the GUI.
        pygame.event.pump()
    ```
    
-5. Let's set the background color to white before we draw the text at the end of the loop.
+5. Let's set the background color to white before we draw the text **at the end of the loop**.
    ```python
        # fill the window with white color by RGB code (255, 255, 255)
        window.fill((255, 255, 255))
@@ -364,7 +364,7 @@ In this part, we will use the `pygame` library to create the GUI.
 
    
    
-6. To show text on the window, we first create a text surface and then draw it at a position. In pygame, positions are always supplied as an (X,Y) coordinate. This represents how many pixels to the right and how many pixels down the surface should be placed.
+6. To show text on the window, we first create a text surface and then draw it at a position. In pygame, positions are always supplied as an (X,Y) coordinate. This represents how many pixels to the right and how many pixels down the surface should be placed. Put the following code **at the end of the loop**.
 
    ![Alt tex](images/gui-coordinates.png)
 
@@ -379,7 +379,7 @@ In this part, we will use the `pygame` library to create the GUI.
 
    <div style="page-break-after: always;"></div>
 
-7. Finally, we update the display using `pygame.display.update()` to limit the frame rate to 1 frame per second using clock.tick(1).
+7. Finally, we update the display using `pygame.display.update()` to limit the frame rate to 1 frame per second using clock.tick(1). Put the following code **at the end of the loop**.
    ```python
        # update the display window
        pygame.display.update()      
