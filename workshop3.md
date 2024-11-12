@@ -319,7 +319,7 @@ The LED is connected to the GPIO pin `146` for the Red channel and `150` for the
 
 In this part, we will use the `pygame` library to create the GUI.
 
-1. Let's import the library and initialize it at the top of the program.
+1. Let's import the library and initialize it at the top of the program, *after* the `import datetime` statement.
    ```python
    import pygame 
 
